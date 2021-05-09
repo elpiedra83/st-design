@@ -1,0 +1,32 @@
+{
+  "name": "st-design",
+  "version": "1.0.0",
+  "description": "ST design website",
+  "main": "index.html",
+  "dependencies": {
+    "webpack": "^5.36.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elpiedra83/st-design.git"
+  },
+  "keywords": [
+    "design",
+    "products",
+    "rainbow",
+    "dyi",
+    "craftman",
+    "freelancer",
+    "selfemployed"
+  ],
+  "author": "Luis Piedrahita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elpiedra83/st-design/issues"
+  },
+  "homepage": "https://github.com/elpiedra83/st-design#readme"
+}
