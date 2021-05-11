@@ -187,12 +187,15 @@ img {
       a {
         text-decoration: none;
         font-size: 1.5em;
-        padding: 32px;
+        padding: 1em;
         color: $clr-third;
         text-transform: lowercase;
         &:hover {
           border-bottom: 10px solid $clr-secondary;
           color: $clr-content;
+        }
+        @include mobile {
+          padding: 0.3em;
         }
       }
     }
@@ -257,6 +260,9 @@ img {
       }
     }
   }
+  @include mobile {
+    padding: 7em 1em;
+  }
 }
 .colors__wrapper {
   display: flex;
@@ -299,8 +305,8 @@ img {
 }
 
 #link-productos:hover {
-  border-bottom: 10px solid $clr-secondary;
-  color: $clr-secondary;
+  border-bottom: 10px solid $clr-third-900;
+  color: $clr-third-900;
 }
 #contacto {
   background-color: $clr-secondary;
@@ -336,8 +342,8 @@ img {
   }
 }
 #link-contacto:hover {
-  border-bottom: 10px solid $clr-third;
-  color: $clr-third;
+  border-bottom: 10px solid $clr-secondary;
+  color: $clr-secondary;
 }
 
 /* RAINBOW START*/
@@ -383,6 +389,11 @@ $rainbow-seventh-color: #cc99c9;
         @include rainbow-config($i);
       }
     }
+  }
+  @include mobile {
+    position: absolute;
+    bottom: -20%;
+    left: -10%;
   }
 }
 
@@ -475,6 +486,7 @@ $rainbow-seventh-color: #cc99c9;
     }
     @include mobile {
       width: 95%;
+      margin-top: 16vh;
     }
   }
 }
