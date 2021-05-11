@@ -2,13 +2,16 @@
   "name": "st-design",
   "version": "1.0.0",
   "description": "ST design website",
-  "main": "index.html",
-  "dependencies": {
-    "webpack": "^5.36.2"
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-merge": "^5.7.3"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",

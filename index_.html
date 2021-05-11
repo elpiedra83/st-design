@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ST Design</title>
+    <link rel="icon" href="./images/assets/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header id="header">
+        <img src="./images/assets/st_isotipo.png" alt="logo" id="header-img" />
+        <nav id="nav-bar" class="nav-bar">
+          <ul>
+            <li><a id="link-home" class="nav-link" href="#home">Inicio</a></li>
+            <li>
+              <a id="link-productos" class="nav-link" href="#productos"
+                >Gallería</a
+              >
+            </li>
+            <li>
+              <a id="link-contacto" class="nav-link" href="#contacto"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main id="main">
+        <section id="home">
+          <div id="form-Colors">
+            <h2>Armá el arcoiris a tu gusto!</h2>
+            <div class="color__selection">
+              <h3>Seleccione la cantidad de colores</h3>
+              <div class="rainbow-color-number-wrapper">
+                <input
+                  type="radio"
+                  id="five"
+                  name="rainbow-color-number"
+                  value="5"
+                  checked
+                />
+                <label for="five">5</label><br />
+                <input
+                  type="radio"
+                  id="six"
+                  name="rainbow-color-number"
+                  value="6"
+                />
+                <label for="six">6</label><br />
+                <input
+                  type="radio"
+                  id="seven"
+                  name="rainbow-color-number"
+                  value="7"
+                />
+                <label for="seven">7</label>
+              </div>
+              <h3>Seleccione los colores</h3>
+              <div class="colors__wrapper">
+                <div class="color-picker-wrapper" id="color-picker-wrapper_1">
+                  <label for="color1"
+                    ><input type="color" id="color1" value="#ff6663"
+                  /></label>
+                </div>
+                <div class="color-picker-wrapper" id="color-picker-wrapper_2">
+                  <label for="color2"
+                    ><input type="color" id="color2" value="#feb144"
+                  /></label>
+                </div>
+                <div class="color-picker-wrapper" id="color-picker-wrapper_3">
+                  <label for="color3"
+                    ><input type="color" id="color3" value="#fdfd97"
+                  /></label>
+                </div>
+                <div class="color-picker-wrapper" id="color-picker-wrapper_4">
+                  <label for="color4"
+                    ><input type="color" id="color4" value="#9ee09e"
+                  /></label>
+                </div>
+                <div class="color-picker-wrapper" id="color-picker-wrapper_5">
+                  <label for="color5"
+                    ><input type="color" id="color5" value="#9ec1cf"
+                  /></label>
+                </div>
+                <div class="color-picker-wrapper" id="color-picker-wrapper_6">
+                  <label for="color6"
+                    ><input type="color" id="color6" value="#7e9db2"
+                  /></label>
+                </div>
+                <div class="color-picker-wrapper" id="color-picker-wrapper_7">
+                  <label for="color7"
+                    ><input type="color" id="color7" value="#cc99c9"
+                  /></label>
+                </div>
+              </div>
+            </div>
+            <button class="btn" id="order">Pedir</button>
+            <small>* Colores sujetos a disponibilidad.</small>
+          </div>
+          <div class="center">
+            <ul id="rainbowBase">
+              <li id="firstColor"></li>
+              <li id="secondColor"></li>
+              <li id="thirdColor"></li>
+              <li id="fourthColor"></li>
+              <li id="fifthColor"></li>
+            </ul>
+          </div>
+        </section>
+        <section id="productos">
+          <h2>Nuestra gallería</h2>
+          <div class="productos-wrapper">
+            <img class="images" src="./images/1.jpg" alt="imagen1" />
+            <img class="images" src="./images/2.jpg" alt="imagen2" />
+            <img class="images" src="./images/3.jpg" alt="imagen3" />
+            <img class="images" src="./images/4.jpg" alt="imagen4" />
+            <img class="images" src="./images/5.jpg" alt="imagen5" />
+            <img class="images" src="./images/6.jpg" alt="imagen6" />
+            <img class="images" src="./images/7.jpg" alt="imagen7" />
+            <img class="images" src="./images/8.jpg" alt="imagen8" />
+            <img class="images" src="./images/9.jpg" alt="imagen9" />
+            <img class="images" src="./images/10.jpg" alt="imagen10" />
+            <img class="images" src="./images/11.jpg" alt="imagen11" />
+            <img class="images" src="./images/12.jpg" alt="imagen12" />
+            <img class="images" src="./images/13.jpg" alt="imagen13" />
+            <img class="images" src="./images/14.jpg" alt="imagen14" />
+            <img class="images" src="./images/15.jpg" alt="imagen15" />
+            <img class="images" src="./images/16.jpg" alt="imagen16" />
+            <img class="images" src="./images/17.jpg" alt="imagen17" />
+            <img class="images" src="./images/18.jpg" alt="imagen18" />
+          </div>
+        </section>
+        <section id="contacto">
+          <h2>Consultanos por aquí</h2>
+          <form
+            action="https://formspree.io/f/mqkwevln"
+            method="POST"
+            id="contact-form"
+          >
+            <form-group>
+              <label for="name">Nombre</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="tu nombre"
+                required
+              />
+            </form-group>
+            <form-group>
+              <label for="phone">Celular</label>
+              <input
+                type="number"
+                id="phone"
+                name="phone"
+                placeholder="tu celular"
+              />
+            </form-group>
+            <form-group>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="_replyto"
+                placeholder="tu email"
+                required
+              />
+            </form-group>
+            <form-group>
+              <label for="subject">asunto</label>
+              <textarea
+                required
+                placeholder="que consulta tenes?"
+                name="subject"
+                id="subject"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </form-group>
+            <form-group>
+              <button id="form-button" class="btn">Enviar</button>
+            </form-group>
+            <p id="contact-form-status"></p>
+          </form>
+        </section>
+      </main>
+    </div>
+    <!-- The Modal -->
+    <div id="Modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form
+          id="order-form"
+          action="https://formspree.io/f/xwkavdrv"
+          method="POST"
+        ></form>
+      </div>
+    </div>
+    <script src="./scripts/rainbow.js"></script>
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/modal.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        setRainbow(5);
+      });
+    </script>
+  </body>
+</html>
