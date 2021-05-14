@@ -41,45 +41,51 @@ const buildForm = () => {
   form.append(numberOfColors);
 
   let div = document.createElement("div");
+  let color = "";
   div.setAttribute("class", "colors__wrapper");
   const color_selected_1 = document.createElement("input");
   color_selected_1.setAttribute("type", "text");
   color_selected_1.setAttribute("class", "color-picker-wrapper");
   const color_picker_1 = document.querySelector("#color1");
-  color_selected_1.style.backgroundColor = color_picker_1.value;
-  color_selected_1.setAttribute("name", `color_1:${color_picker_1.value}`);
+  color = color_picker_1.dataset.currentColor;
+  color_selected_1.style.backgroundColor = color;
+  color_selected_1.setAttribute("name", `color_1:${color}`);
   div.append(color_selected_1);
   const color_selected_2 = document.createElement("input");
   color_selected_2.setAttribute("type", "text");
   color_selected_2.setAttribute("class", "color-picker-wrapper");
   color_selected_2.setAttribute("name", "color_2");
   const color_picker_2 = document.querySelector("#color2");
-  color_selected_2.style.backgroundColor = color_picker_2.value;
-  color_selected_2.setAttribute("name", `color_2:${color_picker_2.value}`);
+  color = color_picker_2.dataset.currentColor;
+  color_selected_2.style.backgroundColor = color;
+  color_selected_2.setAttribute("name", `color_2:${color}`);
   div.append(color_selected_2);
   const color_selected_3 = document.createElement("input");
   color_selected_3.setAttribute("type", "text");
   color_selected_3.setAttribute("class", "color-picker-wrapper");
   color_selected_3.setAttribute("name", "color_3");
   const color_picker_3 = document.querySelector("#color3");
-  color_selected_3.style.backgroundColor = color_picker_3.value;
-  color_selected_3.setAttribute("name", `color_3:${color_picker_3.value}`);
+  color = color_picker_3.dataset.currentColor;
+  color_selected_3.style.backgroundColor = color;
+  color_selected_3.setAttribute("name", `color_3:${color}`);
   div.append(color_selected_3);
   const color_selected_4 = document.createElement("input");
   color_selected_4.setAttribute("type", "text");
   color_selected_4.setAttribute("class", "color-picker-wrapper");
   color_selected_4.setAttribute("name", "color_4");
   const color_picker_4 = document.querySelector("#color4");
-  color_selected_4.style.backgroundColor = color_picker_4.value;
-  color_selected_4.setAttribute("name", `color_4:${color_picker_4.value}`);
+  color = color_picker_4.dataset.currentColor;
+  color_selected_4.style.backgroundColor = color;
+  color_selected_4.setAttribute("name", `color_4:${color}`);
   div.append(color_selected_4);
   const color_selected_5 = document.createElement("input");
   color_selected_5.setAttribute("type", "text");
   color_selected_5.setAttribute("class", "color-picker-wrapper");
   color_selected_5.setAttribute("name", "color_5");
   const color_picker_5 = document.querySelector("#color5");
-  color_selected_5.style.backgroundColor = color_picker_5.value;
-  color_selected_5.setAttribute("name", `color_5:${color_picker_5.value}`);
+  color = color_picker_5.dataset.currentColor;
+  color_selected_5.style.backgroundColor = color;
+  color_selected_5.setAttribute("name", `color_5:${color}`);
   div.append(color_selected_5);
   if (numberOfRainbows.value >= 6) {
     const color_selected_6 = document.createElement("input");
@@ -87,8 +93,9 @@ const buildForm = () => {
     color_selected_6.setAttribute("class", "color-picker-wrapper");
     color_selected_6.setAttribute("name", "color_6");
     const color_picker_6 = document.querySelector("#color6");
-    color_selected_6.style.backgroundColor = color_picker_6.value;
-    color_selected_6.setAttribute("name", `color_6:${color_picker_6.value}`);
+    color = color_picker_6.dataset.currentColor;
+    color_selected_6.style.backgroundColor = color;
+    color_selected_6.setAttribute("name", `color_6:${color}`);
     div.append(color_selected_6);
     if (numberOfRainbows.value == 7) {
       const color_selected_7 = document.createElement("input");
@@ -96,12 +103,12 @@ const buildForm = () => {
       color_selected_7.setAttribute("class", "color-picker-wrapper");
       color_selected_7.setAttribute("name", "color_7");
       const color_picker_7 = document.querySelector("#color7");
-      color_selected_7.style.backgroundColor = color_picker_7.value;
-      color_selected_7.setAttribute("name", `color_7:${color_picker_7.value}`);
+      color = color_picker_7.dataset.currentColor;
+      color_selected_7.style.backgroundColor = color;
+      color_selected_7.setAttribute("name", `color_7:${color}`);
       div.append(color_selected_7);
     }
   }
-  // p.append(div);
   form.append(div);
   //FORM ORDER INI
 
@@ -168,7 +175,7 @@ const buildForm = () => {
   const button = document.createElement("button");
   button.setAttribute("id", "modal-form-button");
   button.setAttribute("class", "btn");
-  button.innerText = "Pedir";
+  button.innerText = "Comprar";
   form.append(button);
 
   p = document.createElement("p");

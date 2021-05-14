@@ -162,6 +162,8 @@ input[type="number"] {
   left: 0px;
   width: 100%;
   z-index: 20;
+  -webkit-transition: top 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out;
 }
 
 #header-img,
@@ -202,6 +204,7 @@ img {
 #home {
   background-color: white;
   padding: 10em 2em;
+  position: relative;
 }
 
 #home #form-Colors {
@@ -290,12 +293,15 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 0.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .colors__wrapper .color-picker-wrapper {
   border-radius: 50%;
-  width: 3em;
-  height: 3em;
+  width: 3rem;
+  height: 3rem;
+  border: none;
 }
 
 #link-home:hover {
@@ -407,6 +413,12 @@ img {
 }
 
 /* RAINBOW START*/
+.center {
+  position: absolute;
+  bottom: -4vh;
+  left: -4vw;
+}
+
 .center ul {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
@@ -474,14 +486,6 @@ img {
   height: 120vw;
   -webkit-animation-delay: 4000ms;
           animation-delay: 4000ms;
-}
-
-@media (max-width: 767px) {
-  .center {
-    position: absolute;
-    bottom: -20%;
-    left: -10%;
-  }
 }
 
 @-webkit-keyframes animate-rainbow {
@@ -574,8 +578,6 @@ img {
 
 .modal .modal-content form .colors__wrapper {
   gap: 1rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .modal .modal-content form .color-picker-wrapper {

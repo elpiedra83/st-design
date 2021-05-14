@@ -4,6 +4,7 @@
   "description": "ST design website",
   "private": true,
   "dependencies": {
+    "@eastdesire/jscolor": "^2.4.5",
     "lodash": "^4.17.21"
   },
   "devDependencies": {

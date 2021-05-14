@@ -41,7 +41,7 @@
           <div id="form-Colors">
             <h2>Armá el arcoiris a tu gusto!</h2>
             <div class="color__selection">
-              <h3>Seleccione la cantidad de colores</h3>
+              <h3>Cuantos colores querés?</h3>
               <div class="rainbow-color-number-wrapper">
                 <input
                   type="radio"
@@ -66,56 +66,71 @@
                 />
                 <label for="seven">7</label>
               </div>
-              <h3>Seleccione los colores</h3>
+              <h3>Que colores?</h3>
               <div class="colors__wrapper">
-                <div class="color-picker-wrapper" id="color-picker-wrapper_1">
-                  <label for="color1"
-                    ><input type="color" id="color1" value="#ff6663"
-                  /></label>
-                </div>
-                <div class="color-picker-wrapper" id="color-picker-wrapper_2">
-                  <label for="color2"
-                    ><input type="color" id="color2" value="#feb144"
-                  /></label>
-                </div>
-                <div class="color-picker-wrapper" id="color-picker-wrapper_3">
-                  <label for="color3"
-                    ><input type="color" id="color3" value="#fdfd97"
-                  /></label>
-                </div>
-                <div class="color-picker-wrapper" id="color-picker-wrapper_4">
-                  <label for="color4"
-                    ><input type="color" id="color4" value="#9ee09e"
-                  /></label>
-                </div>
-                <div class="color-picker-wrapper" id="color-picker-wrapper_5">
-                  <label for="color5"
-                    ><input type="color" id="color5" value="#9ec1cf"
-                  /></label>
-                </div>
-                <div class="color-picker-wrapper" id="color-picker-wrapper_6">
-                  <label for="color6"
-                    ><input type="color" id="color6" value="#7e9db2"
-                  /></label>
-                </div>
-                <div class="color-picker-wrapper" id="color-picker-wrapper_7">
-                  <label for="color7"
-                    ><input type="color" id="color7" value="#cc99c9"
-                  /></label>
-                </div>
+                <button
+                  class="color-picker-wrapper"
+                  id="color1"
+                  data-jscolor="{
+                    onChange: 'updateColor(this, \'#firstColor\')',
+                    onInput: 'updateColor(this, \'#firstColor\')',
+                    value:'ff6663'}"
+                ></button>
+                <button
+                  class="color-picker-wrapper"
+                  id="color2"
+                  data-jscolor="{
+                    onChange: 'updateColor(this, \'#secondColor\')',
+                    onInput: 'updateColor(this, \'#secondColor\')',
+                    value:'feb144'}"
+                ></button>
+                <button
+                  class="color-picker-wrapper"
+                  id="color3"
+                  data-jscolor="{
+                    onChange: 'updateColor(this, \'#thirdColor\')',
+                    onInput: 'updateColor(this, \'#thirdColor\')',
+                    value:'fdfd97'}"
+                ></button>
+                <button
+                  class="color-picker-wrapper"
+                  id="color4"
+                  data-jscolor="{
+                    onChange: 'updateColor(this, \'#fourthColor\')',
+                    onInput: 'updateColor(this, \'#fourthColor\')',
+                    value:'9ee09e'}"
+                ></button>
+                <button
+                  class="color-picker-wrapper"
+                  id="color5"
+                  data-jscolor="{
+                    onChange: 'updateColor(this, \'#fifthColor\')',
+                    onInput: 'updateColor(this, \'#fifthColor\')',
+                    value:'9ec1cf'}"
+                ></button>
+                <button
+                  class="color-picker-wrapper"
+                  id="color6"
+                  data-jscolor="{
+                    onChange: 'updateColor(this, \'#sixthColor\')',
+                    onInput: 'updateColor(this, \'#sixthColor\')',
+                    value:'7e9db2'}"
+                ></button>
+                <button
+                  class="color-picker-wrapper"
+                  id="color7"
+                  data-jscolor="{
+                    onChange: 'updateColor(this, \'#seventhColor\')',
+                    onInput: 'updateColor(this, \'#seventhColor\')',
+                    value:'cc99c9'}"
+                ></button>
               </div>
             </div>
             <button class="btn" id="order">Pedir</button>
             <small>* Colores sujetos a disponibilidad.</small>
           </div>
           <div class="center">
-            <ul id="rainbowBase">
-              <li id="firstColor"></li>
-              <li id="secondColor"></li>
-              <li id="thirdColor"></li>
-              <li id="fourthColor"></li>
-              <li id="fifthColor"></li>
-            </ul>
+            <ul id="rainbowBase"></ul>
           </div>
         </section>
         <section id="productos">
@@ -211,8 +226,11 @@
     <script src="./src/scripts/rainbow.js"></script>
     <script src="./src/scripts/form.js"></script>
     <script src="./src/scripts/modal.js"></script>
+    <script src="./src/scripts/navbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.4.5/jscolor.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        reset();
         setRainbow(5);
       });
     </script>
