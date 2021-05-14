@@ -30,19 +30,32 @@ form-group {
 h2,
 h3 {
   font-family: "Open Sans", sans-serif;
-  color: #666666;
+  position: relative;
 }
 
 h2 {
-  font-weight: 900;
+  font-weight: 500;
   font-size: 2.5em;
-  margin-bottom: 0.5em;
+  letter-spacing: -2px;
+  line-height: 1em;
+  margin-bottom: 2rem;
+}
+
+h2::after {
+  content: "";
+  width: 100px;
+  margin-bottom: -0.3em;
+  border: 3px solid currentColor;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 h3 {
   font-size: 1.8em;
   font-weight: 100;
   letter-spacing: -1px;
+  color: #666666;
 }
 
 label {
@@ -207,6 +220,11 @@ img {
   position: relative;
 }
 
+#home h2 {
+  color: #8c8c8c;
+  margin-bottom: 0;
+}
+
 #home #form-Colors {
   display: -ms-grid;
   display: grid;
@@ -271,15 +289,9 @@ img {
   z-index: 11;
 }
 
-#home #form-Colors .color__selection .colors__wrapper .color-picker-wrapper label {
-  padding: 2rem;
+#home #form-Colors .color__selection .colors__wrapper button {
   cursor: pointer;
-}
-
-#home #form-Colors .color__selection .colors__wrapper .color-picker-wrapper input[type="color"] {
-  opacity: 0;
-  display: none;
-  border: none;
+  outline: none;
 }
 
 @media (max-width: 767px) {
@@ -304,6 +316,18 @@ img {
   border: none;
 }
 
+@media (max-width: 767px) {
+  .colors__wrapper .color-picker-wrapper {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .colors__wrapper {
+    gap: 0;
+  }
+}
+
 #link-home:hover {
   border-bottom: 10px solid white;
   color: #e6e6e6;
@@ -314,6 +338,10 @@ img {
   display: -ms-grid;
   display: grid;
   z-index: 1;
+}
+
+#productos h2 {
+  color: #4d4d4d;
 }
 
 #productos .productos-wrapper {
@@ -366,6 +394,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#contacto h2 {
+  color: #666666;
 }
 
 #contacto form {

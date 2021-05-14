@@ -10,7 +10,7 @@ $clr-fourth-900: hsl(0, 0%, 67%);
 $clr-background-100: hsl(0, 0%, 100%);
 $clr-background-900: hsl(0, 0%, 0%);
 $clr-content: hsl(0, 0%, 90%);
-$clr-title: hsl(0, 0%, 40%);
+$clr-title: hsl(0, 0%, 55%);
 $clr-border-100: hsl(0, 0%, 100%);
 $clr-border-500: hsl(0, 0%, 50%);
 $clr-border-900: hsl(0, 0%, 0%);
@@ -73,19 +73,31 @@ form-group {
 h2,
 h3 {
   font-family: "Open Sans", sans-serif;
-  color: $clr-title;
+  position: relative;
 }
 
 h2 {
-  font-weight: 900;
+  font-weight: 500;
   font-size: 2.5em;
-  margin-bottom: 0.5em;
+  letter-spacing: -2px;
+  line-height: 1em;
+  margin-bottom: 2rem;
+  &::after {
+    content: "";
+    width: 100px;
+    margin-bottom: -0.3em;
+    border: 3px solid currentColor;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 h3 {
   font-size: 1.8em;
   font-weight: 100;
   letter-spacing: -1px;
+  color: $clr-text-600;
 }
 
 label {
@@ -210,6 +222,10 @@ img {
   background-color: $clr-background-100;
   padding: 10em 2em;
   position: relative;
+  h2 {
+    color: $clr-title;
+    margin-bottom: 0;
+  }
   #form-Colors {
     display: grid;
     gap: 2em;
@@ -248,16 +264,9 @@ img {
       }
       .colors__wrapper {
         z-index: 11;
-        .color-picker-wrapper {
-          label {
-            padding: 2rem;
-            cursor: pointer;
-          }
-          input[type="color"] {
-            opacity: 0;
-            display: none;
-            border: none;
-          }
+        button {
+          cursor: pointer;
+          outline: none;
         }
       }
     }
@@ -275,6 +284,12 @@ img {
     width: 3rem;
     height: 3rem;
     border: none;
+    @include mobile {
+      margin-right: 0.5rem;
+    }
+  }
+  @include mobile {
+    gap: 0;
   }
 }
 
@@ -287,6 +302,9 @@ img {
   background-color: $clr-third;
   display: grid;
   z-index: 1;
+  h2 {
+    color: $clr-text-700;
+  }
   .productos-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(33vh, 1fr));
@@ -317,6 +335,9 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  h2 {
+    color: $clr-text-600;
+  }
   form {
     background: $clr-text-500;
     color: $clr-text-100;
