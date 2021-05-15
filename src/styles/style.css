@@ -340,6 +340,12 @@ img {
   padding: 0.9rem 1.4rem;
 }
 
+@media (max-width: 767px) {
+  #home #form-Colors .color__selection .rainbow-color-number-wrapper {
+    margin-right: 0.5rem;
+  }
+}
+
 #home #form-Colors .color__selection .colors__wrapper {
   z-index: 11;
 }
@@ -384,6 +390,7 @@ img {
 @media (max-width: 767px) {
   .colors__wrapper .color-picker-wrapper {
     margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 

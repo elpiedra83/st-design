@@ -301,6 +301,9 @@ img {
           border-radius: 50%;
           padding: 0.9rem 1.4rem;
         }
+        @include mobile {
+          margin-right: 0.5rem;
+        }
       }
       .colors__wrapper {
         z-index: 11;
@@ -333,6 +336,7 @@ img {
     }
     @include mobile {
       margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
     }
   }
   @include mobile {
