@@ -184,7 +184,7 @@ const buildForm = () => {
 };
 
 const calcRainbowPrice = (rainbowColors) => {
-  const unitPrice = 850;
+  const unitPrice = 950;
   if (rainbowColors == 6) return unitPrice + 100;
   if (rainbowColors == 7) return unitPrice + 250;
   return unitPrice;

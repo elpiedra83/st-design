@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./src/styles/style.css" />
   </head>
   <body>
@@ -21,6 +25,16 @@
           id="header-img"
         />
         <nav id="nav-bar" class="nav-bar">
+          <div id="hamburger">
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <div id="mobileLinks">
+              <a href="#home">Home</a>
+              <a href="#productos">Galería</a>
+              <a href="#contacto">Contacto</a>
+            </div>
+          </div>
           <ul>
             <li><a id="link-home" class="nav-link" href="#home">Inicio</a></li>
             <li>
@@ -41,7 +55,7 @@
           <div id="form-Colors">
             <h2>Armá el arcoiris a tu gusto!</h2>
             <div class="color__selection">
-              <h3>Cuantos colores querés?</h3>
+              <h3>cuantos colores querés?</h3>
               <div class="rainbow-color-number-wrapper">
                 <input
                   type="radio"
@@ -66,7 +80,7 @@
                 />
                 <label for="seven">7</label>
               </div>
-              <h3>Que colores?</h3>
+              <h3>selecciona cada color aquí</h3>
               <div class="colors__wrapper">
                 <button
                   class="color-picker-wrapper"
@@ -135,25 +149,154 @@
         </section>
         <section id="productos">
           <h2>Nuestra galería</h2>
+          <h3>Línea Arcoiris</h3>
           <div class="productos-wrapper">
-            <img class="images" src="./src/images/1.jpg" alt="imagen1" />
-            <img class="images" src="./src/images/2.jpg" alt="imagen2" />
-            <img class="images" src="./src/images/3.jpg" alt="imagen3" />
-            <img class="images" src="./src/images/4.jpg" alt="imagen4" />
-            <img class="images" src="./src/images/5.jpg" alt="imagen5" />
-            <img class="images" src="./src/images/6.jpg" alt="imagen6" />
-            <img class="images" src="./src/images/7.jpg" alt="imagen7" />
-            <img class="images" src="./src/images/8.jpg" alt="imagen8" />
-            <img class="images" src="./src/images/9.jpg" alt="imagen9" />
-            <img class="images" src="./src/images/10.jpg" alt="imagen10" />
-            <img class="images" src="./src/images/11.jpg" alt="imagen11" />
-            <img class="images" src="./src/images/12.jpg" alt="imagen12" />
-            <img class="images" src="./src/images/13.jpg" alt="imagen13" />
-            <img class="images" src="./src/images/14.jpg" alt="imagen14" />
-            <img class="images" src="./src/images/15.jpg" alt="imagen15" />
-            <img class="images" src="./src/images/16.jpg" alt="imagen16" />
-            <img class="images" src="./src/images/17.jpg" alt="imagen17" />
-            <img class="images" src="./src/images/18.jpg" alt="imagen18" />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_1.jpg"
+              alt="imagen1"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_2.jpg"
+              alt="imagen2"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_3.jpg"
+              alt="imagen3"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_4.jpg"
+              alt="imagen4"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_5.jpg"
+              alt="imagen5"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_6.jpg"
+              alt="imagen6"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_7.jpg"
+              alt="imagen7"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_8.jpg"
+              alt="imagen8"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_9.jpg"
+              alt="imagen9"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_10.jpg"
+              alt="imagen10"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_11.jpg"
+              alt="imagen11"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_12.jpg"
+              alt="imagen12"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_13.jpg"
+              alt="imagen13"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_14.jpg"
+              alt="imagen14"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_15.jpg"
+              alt="imagen15"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_16.jpg"
+              alt="imagen16"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_17.jpg"
+              alt="imagen17"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_18.jpg"
+              alt="imagen18"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_19.jpg"
+              alt="imagen19"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_20.jpg"
+              alt="imagen20"
+            />
+            <img
+              class="images"
+              src="./src/images/rainbow/rainbow_21.jpg"
+              alt="imagen21"
+            />
+          </div>
+          <h3>Línea Pantallas</h3>
+          <div class="productos-wrapper">
+            <img
+              class="images"
+              src="./src/images/lamp/lamp_1.jpg"
+              alt="lamp one"
+            />
+            <img
+              class="images"
+              src="./src/images/lamp/lamp_2.jpg"
+              alt="lamp two"
+            />
+            <img
+              class="images"
+              src="./src/images/lamp/lamp_3.jpg"
+              alt="lamp three"
+            />
+            <img
+              class="images"
+              src="./src/images/lamp/lamp_4.jpg"
+              alt="lamp four"
+            />
+            <img
+              class="images"
+              src="./src/images/lamp/lamp_5.jpg"
+              alt="lamp five"
+            />
+            <img
+              class="images"
+              src="./src/images/lamp/lamp_6.jpg"
+              alt="lamp six"
+            />
+          </div>
+          <h3>Línea Llaveros</h3>
+          <div class="productos-wrapper">
+            <img
+              class="images"
+              src="./src/images/key-chain/key-chain_1.jpg"
+              alt="key-chain welcome"
+            />
           </div>
         </section>
         <section id="contacto">
