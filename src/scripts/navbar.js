@@ -1,3 +1,12 @@
+function hamburger() {
+  let mobileLinks = document.querySelector("#mobileLinks");
+  if (mobileLinks.style.display === "block") {
+    mobileLinks.style.display = "none";
+  } else {
+    mobileLinks.style.display = "block";
+  }
+}
+
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
@@ -12,12 +21,3 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
-
-function hamburger() {
-  let mobileLinks = document.querySelector("#mobileLinks");
-  if (mobileLinks.style.display === "block") {
-    mobileLinks.style.display = "none";
-  } else {
-    mobileLinks.style.display = "block";
-  }
-}
