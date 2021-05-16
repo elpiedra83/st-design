@@ -10,41 +10,21 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <div id="container">
-      <header id="header">
-        <img src="./images/assets/st_isotipo.png" alt="logo" id="header-img" />
-        <nav id="nav-bar" class="nav-bar">
-          <div id="hamburger">
-            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-              <i class="fa fa-bars"></i>
-            </a>
-            <div id="mobileLinks">
-              <a href="#home">Home</a>
-              <a href="#productos">Galería</a>
-              <a href="#contacto">Contacto</a>
-            </div>
-          </div>
+      <header class="header">
+        <img src="./images/assets/st_isotipo.png" alt="logo" class="logo" />
+        <input type="checkbox" class="nav-toggle" id="nav-toggle" />
+        <nav>
           <ul>
-            <li><a id="link-home" class="nav-link" href="#home">Inicio</a></li>
-            <li>
-              <a id="link-productos" class="nav-link" href="#productos"
-                >Galería</a
-              >
-            </li>
-            <li>
-              <a id="link-contacto" class="nav-link" href="#contacto"
-                >Contacto</a
-              >
-            </li>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#productos">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
+        <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
       </header>
       <main id="main">
         <section id="home">
